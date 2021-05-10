@@ -1,0 +1,66 @@
+.discovery__image {
+  grid-column: full-start/col-end 4;
+  background-image: linear-gradient(
+      rgba($color-primary, 0.5),
+      rgba($color-primary-dark, 0.5)
+    ),
+    url(../img/back.jpg);
+  background-size: cover;
+
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  &--img1 {
+    width: 100%;
+    grid-column: 2/6;
+    grid-row: 2/6;
+    box-shadow: 0 2rem 5rem rgba($color: #000000, $alpha: 0.1);
+  }
+  &--img2 {
+    width: 110%;
+    grid-column: 4/7;
+    grid-row: 4/-1;
+    z-index: 10;
+    box-shadow: 0 2rem 5rem rgba($color: #000000, $alpha: 0.2);
+  }
+}
+.discovery__content {
+  background-color: $color-grey-light-1;
+  grid-column: col-start 5 / full-end;
+  padding: 6rem 8vw;
+  font-family: $font-display;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  &__header1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $color-primary;
+  }
+  &__header2 {
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+    margin-top: 2rem;
+  }
+  &__paragraph {
+    font-size: 1.5rem;
+    margin: 4rem 0;
+    color: $color-grey-dark-1;
+  }
+  &__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+    font-family: $font-display;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+}

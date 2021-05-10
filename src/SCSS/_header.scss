@@ -1,0 +1,78 @@
+.header {
+  grid-column: 2 / col-end 6;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-secondary, 0.9),
+      rgba($color-secondary, 0.9)
+    ),
+    url("../img/hero.jpeg");
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr; //first row take as much space as available
+  grid-template-columns: max-content;
+  width: 100%;
+  grid-gap: 3rem;
+  padding: 5rem 8rem;
+  font-family: $font-display;
+  &__logo {
+    width: 15rem;
+    text-align: center;
+    justify-self: center;
+  }
+  &__title {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 400;
+  }
+  &__subtitle {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-weight: 400;
+  }
+  &__btn {
+    justify-self: flex-start;
+    align-self: flex-start;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    padding: 1.5rem 3rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: $font-display;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+  &__soon {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    &::after,
+    &::before {
+      content: "";
+      height: 1px;
+
+      background-color: white;
+    }
+    &__logos {
+      align-self: flex-start;
+      display: grid;
+      grid-column-gap: 5rem;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+    &__logo {
+      height: 2.5rem;
+    }
+  }
+}
+.realtors {
+  background-color: rgb(37, 37, 10);
+  grid-column: col-start 7 / full-end;
+}

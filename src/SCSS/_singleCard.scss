@@ -1,0 +1,77 @@
+.card {
+  background-color: $color-grey-light-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 4rem;
+  transition: all 0.2s;
+  &:hover {
+    transform: translateY(-1rem);
+  }
+  &__image {
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  &__likebtn {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    justify-self: end;
+    margin: 2rem;
+    width: 2rem;
+    height: 2rem !important;
+  }
+  &__like {
+    color: $color-primary;
+    font-size: 2rem !important;
+    z-index: 1;
+  }
+  &__name {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    align-self: flex-end;
+    width: 80%;
+    justify-self: center;
+    text-align: center;
+    font-family: $font-display;
+    font-size: 1.6rem;
+    padding: 1.25rem;
+    background-color: $color-secondary;
+    color: white;
+    font-weight: 400;
+    transform: translateY(50%);
+  }
+  &__location,
+  &__rooms,
+  &__area,
+  &__price {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  &__location,
+  &__rooms {
+    margin-top: 3rem;
+  }
+  &__icon {
+    color: $color-primary;
+    font-size: 2rem !important;
+    margin-right: 1rem;
+  }
+  &__btn {
+    grid-column: 1/-1;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: $font-display;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+}
