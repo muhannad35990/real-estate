@@ -4,6 +4,10 @@ import bbc from "../img/logo-bbc.png";
 import bi from "../img/logo-bi.png";
 import forbes from "../img/logo-forbes.png";
 import techcrunch from "../img/logo-techcrunch.png";
+import realtor1 from "../img/realtor-1.jpeg";
+import realtor2 from "../img/realtor-2.jpeg";
+import realtor3 from "../img/realtor-3.jpeg";
+
 function Header() {
   return (
     <>
@@ -26,7 +30,32 @@ function Header() {
           />
         </div>
       </div>
-      <div className="realtors"></div>
+      <div className="realtors">
+        <h3 className="realtors__title">top 3 realtors</h3>
+        <div className="realtors__toprealtors">
+          <img src={realtor1} alt="realtor" className="realtors__img" />
+          <div>
+            <h4 className="realtors__name">Erik Feinman</h4>
+            <p className="realtors__numberOfsells">225 houses sold</p>
+          </div>
+        </div>
+
+        <div className="realtors__toprealtors">
+          <img src={realtor2} alt="realtor" className="realtors__img" />
+          <div>
+            <h4 className="realtors__name">Kim Brown</h4>
+            <p className="realtors__numberOfsells">214 houses sold</p>
+          </div>
+        </div>
+
+        <div className="realtors__toprealtors">
+          <img src={realtor3} alt="realtor" className="realtors__img" />
+          <div>
+            <h4 className="realtors__name">Toby Ramsey</h4>
+            <p className="realtors__numberOfsells">185 houses sold</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
