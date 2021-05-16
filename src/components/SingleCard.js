@@ -7,10 +7,10 @@ import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import { IconButton } from "@material-ui/core";
 
-function SingleCard({ image, name, location, rooms, area, price }) {
+function SingleCard({ image, name, location, rooms, area, price, delay }) {
   const [fav, setfav] = useState(false);
   return (
-    <div className="card">
+    <div data-aos="fade-up" data-aos-delay={delay} className="card">
       <img src={image} alt="image" className="card__image" />
       <IconButton onClick={() => setfav(!fav)} className="card__likebtn">
         {fav ? (

@@ -11,6 +11,7 @@ function Cards() {
   return (
     <section className="cards">
       <SingleCard
+        delay="0"
         image={house1}
         name="Beautiful Family House"
         location="USA"
@@ -19,6 +20,7 @@ function Cards() {
         price="1,000,000"
       />
       <SingleCard
+        delay="100"
         image={house2}
         name="Modern Glass Villa"
         location="Canada"
@@ -27,6 +29,7 @@ function Cards() {
         price="2,850,000"
       />
       <SingleCard
+        delay="200"
         image={house3}
         name="Cozy Country House"
         location="UK"
@@ -35,6 +38,7 @@ function Cards() {
         price="850,000"
       />
       <SingleCard
+        delay="400"
         image={house4}
         name="Large Rustical Villa"
         location="Portugal"
@@ -43,6 +47,7 @@ function Cards() {
         price="1,900,000"
       />
       <SingleCard
+        delay="600"
         image={house5}
         name="Majestic Palace House"
         location="USA"
@@ -51,6 +56,7 @@ function Cards() {
         price="12,500,000"
       />
       <SingleCard
+        delay="800"
         image={house6}
         name="Modern Family Apartment"
         location="Italy"
