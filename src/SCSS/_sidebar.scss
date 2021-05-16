@@ -80,8 +80,8 @@
     background-color: $color-primary-dark;
 
     @media only screen and(max-width:$bp-large) {
-      height: 50vh;
       width: 50vw;
+      height: 10vh;
     }
   }
   &__list {
@@ -142,7 +142,7 @@
     z-index: 2;
     @media only screen and(max-width:$bp-large) {
       width: 50%;
-      height: 50%;
+      height: 40rem;
     }
   }
   &__navicon {
